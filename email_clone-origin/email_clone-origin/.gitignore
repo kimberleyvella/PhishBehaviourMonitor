@@ -2,7 +2,6 @@ dist/
 *d.ts
 *.map
 .vscode/
-src/**/*.js
 *.ngstyle.ts
 src/**/*.map
 node_modules/
