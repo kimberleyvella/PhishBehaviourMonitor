@@ -1,9 +1,9 @@
-import { ChangeDetectorRef , Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
+import { ChangeDetectorRef, Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { ToolbarComponent, ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 import { AutoCompleteComponent, ChangeEventArgs, SelectEventArgs as DropDownSelectEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 import { getContacts } from '../../../data/datasource';
 import { DataService } from '../../../data-service';
-import { btnClick } from "src/scripts/detection.js";
+import * as detection from "src/scripts/detection.js";
 
 @Component({
     selector: 'tools-section',
@@ -12,18 +12,18 @@ import { btnClick } from "src/scripts/detection.js";
 })
 
 export class ToolsComponent implements OnInit {
-
+    prevEvent: number = 0;
     /** Configurations for the Tools page */
     constructor(private _data: DataService, private chgRef: ChangeDetectorRef) {
         this.contactsList = getContacts();
-    }    
-        
+    }
+
     @ViewChild('toolbarMobile')
     public toolbarMobile: ToolbarComponent;
     @ViewChild('txtSearch1')
     public acSearchMobile: AutoCompleteComponent;
 
-    
+
     // ToolbarDevice Dropdown control binding properties
     private isMenuClick: boolean = false;
     public replyList: { [key: string]: Object }[] = [
@@ -37,7 +37,7 @@ export class ToolsComponent implements OnInit {
     ];
     public categoryList: { [key: string]: Object }[] = [
         { text: 'Blue category', color: 'blue', categoryStyle: 'blue-background' },
-        { text: 'Red category' , color: 'red' , categoryStyle: 'red-background' },
+        { text: 'Red category', color: 'red', categoryStyle: 'red-background' },
         { text: 'Orange category', color: 'orange', categoryStyle: 'orange-background' },
         { text: 'Purple category', color: 'purple', categoryStyle: 'purple-background' },
         { text: 'Green category', color: 'green', categoryStyle: 'green-background' },
@@ -50,7 +50,7 @@ export class ToolsComponent implements OnInit {
     private dropdownField: Object = { text: 'text', value: 'text' };
 
     // AutoComplete binding properties
-    public contactsList: {[key: string]: Object}[] = this._data.contactsList;
+    public contactsList: { [key: string]: Object }[] = this._data.contactsList;
     public searchFields: Object = this._data.searchFields;
     public acClearButton: boolean = false;
 
@@ -72,7 +72,7 @@ export class ToolsComponent implements OnInit {
             let key: string = 'Folder';
             selectedMessage[key] = args.itemData.text;
             this._data.grpListObj.dataSource =
-            this._data.getFilteredDataSource(this._data.messageDataSource, 'Folder', this._data.selectedFolderName);
+                this._data.getFilteredDataSource(this._data.messageDataSource, 'Folder', this._data.selectedFolderName);
             this._data.showEmptyMessage();
         }
     }
@@ -105,6 +105,10 @@ export class ToolsComponent implements OnInit {
     }
 
     public ngOnInit(): void {
+        const reportPhishBtn = document.getElementById('ReportPhish');
+        if (reportPhishBtn) {
+            reportPhishBtn.addEventListener('click', this.reportPhish.bind(this));
+        }
     }
 
     public ngAfterViewInit(): void {
@@ -116,8 +120,28 @@ export class ToolsComponent implements OnInit {
         this.chgRef.detectChanges();
     }
 
-    public reportPhish(): void{
-        alert("The report phish button was pressed");
+    public reportPhish(event: MouseEvent): void {
+        //console.log("The report phish button was pressed");
+        //btnClick(event);
+        // window.dispatchEvent(new Event('reportPhish'));
+        //if (event.which == 1 || (event.target as HTMLElement)?.id == 'ReportPhish') {
+        
+        let eventArray = [];
+        let timeOnLastDiv = this.prevEvent ? (Date.now() - this.prevEvent) / 1000 : 0;
+        this.prevEvent = Date.now();
+        let line = "Timing: " + Math.round(this.prevEvent / 1000) + " Report Phish Clicked";
+        let line2 = "Time passed: " + timeOnLastDiv.toFixed(2);
+        console.log(line);
+        console.log(line2);
+
+        eventArray.push({
+            time: (event.timeStamp / 1000).toFixed(2),
+            timePassed: (timeOnLastDiv / 1000).toFixed(2),
+            type: event.type,
+            button: "Report Phish Button"
+        });
+
+        localStorage.setItem('events', JSON.stringify(eventArray));
+        // }
     }
-    
 }

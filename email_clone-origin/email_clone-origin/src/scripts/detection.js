@@ -3,25 +3,27 @@ let current = '';
         let eventArray = [];
 
         function btnClick(event) {
-            if (event.which == 1) {
-                timeOnLastDiv = event.timeStamp - prevEvent;
-                prevEvent = event.timeStamp;
+            // if (event.which == 1 && event.target.id == 'ReportPhish') {
+            //     timeOnLastDiv = event.timeStamp - prevEvent;
+            //     prevEvent = event.timeStamp;
 
-                line = "Timing: " + (event.timeStamp / 1000).toFixed(2) + "Button Left Clicked";
-                line2 = "Time passed: " + (timeOnLastDiv / 1000).toFixed(2);
-                //result.innerHTML = line + line2 + result.innerHTML;
-                console.log(line);
-                console.log(line2);
+            //     line = "Timing: " + (event.timeStamp / 1000).toFixed(2) + "Button Left Clicked";
+            //     line2 = "Time passed: " + (timeOnLastDiv / 1000).toFixed(2);
+            //     //result.innerHTML = line + line2 + result.innerHTML;
+            //     console.log(line);
+            //     console.log(line2);
 
-                eventArray.push({
-                    time: (event.timeStamp / 1000).toFixed(2),
-                    timePassed: (timeOnLastDiv / 1000).toFixed(2),
-                    type: event.type,
-                    button: event.which
-                });
+            //     //window.dispatchEvent(new Event('reportPhish'));
 
-                localStorage.setItem('events', JSON.stringify(eventArray));
-            }
+            //     eventArray.push({
+            //         time: (event.timeStamp / 1000).toFixed(2),
+            //         timePassed: (timeOnLastDiv / 1000).toFixed(2),
+            //         type: event.type,
+            //         button: event.which
+            //     });
+
+            //     localStorage.setItem('events', JSON.stringify(eventArray));
+            // }
         };
 
         function pageLoaded(event) {
@@ -111,5 +113,11 @@ let current = '';
 
         document.addEventListener("mousemove", display);
         document.onload = pageLoaded;
-       // reportPhishBtn = document.getElementById("ReportPhish");
-        //reportPhishBtn.addEventListener("click", btnClick);
+        window.addEventListener('reportPhish', function(){
+            reportPhish();
+        });
+        // reportPhishBtn = document.getElementById("ReportPhish");
+        // if(reportPhishBtn != null){
+        //     reportPhishBtn.addEventListener("click", btnClick);
+        // }
+        
