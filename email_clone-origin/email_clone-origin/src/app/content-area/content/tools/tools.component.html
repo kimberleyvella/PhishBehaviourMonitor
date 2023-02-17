@@ -30,11 +30,10 @@
                     </div>
                 </ng-template>
             </e-item>
-            <e-item prefixIcon='ej-icon-Delete tb-icons' text='Delete' cssClass='tb-item-Selected' tooltipText='Delete'>
+            <e-item prefixIcon='ej-icon-Delete tb-icons' (click)="reportPhish($event, 'Delete button')"text='Delete' cssClass='tb-item-Selected' tooltipText='Delete'>
             </e-item>
-            <e-item id="ReportPhish" text='Report Phish' (click)="reportPhish($event)" cssClass='tb-item-Selected' tooltipText='Report Phish'></e-item>
-            <e-item text='Junk' cssClass='tb-item-Selected'
-                tooltipText='Mark the sender as unsafe and delete the message'>
+            <e-item id="ReportPhish" text='Report Phish' (click)="reportPhish($event, 'Report Phish button')" cssClass='tb-item-Selected' tooltipText='Report Phish'></e-item>
+            <e-item text='Junk' cssClass='tb-item-Selected'(click)="reportPhish($event, 'Junk button')" tooltipText='Mark the sender as unsafe and delete the message'>
             </e-item>
             <e-item cssClass='tb-item-Selected' tooltipText='Move To'>
                 <ng-template #template>

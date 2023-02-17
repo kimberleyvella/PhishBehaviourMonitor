@@ -12,6 +12,9 @@ import * as detection from "src/scripts/detection.js";
 })
 
 export class ToolsComponent implements OnInit {
+
+    eventArray = [];
+
     prevEvent: number = 0;
     /** Configurations for the Tools page */
     constructor(private _data: DataService, private chgRef: ChangeDetectorRef) {
@@ -120,13 +123,8 @@ export class ToolsComponent implements OnInit {
         this.chgRef.detectChanges();
     }
 
-    public reportPhish(event: MouseEvent): void {
-        //console.log("The report phish button was pressed");
-        //btnClick(event);
-        // window.dispatchEvent(new Event('reportPhish'));
-        //if (event.which == 1 || (event.target as HTMLElement)?.id == 'ReportPhish') {
+    public reportPhish(event, buttonName): void {  
         
-        let eventArray = [];
         let timeOnLastDiv = this.prevEvent ? (Date.now() - this.prevEvent) / 1000 : 0;
         this.prevEvent = Date.now();
         let line = "Timing: " + Math.round(this.prevEvent / 1000) + " Report Phish Clicked";
@@ -134,14 +132,14 @@ export class ToolsComponent implements OnInit {
         console.log(line);
         console.log(line2);
 
-        eventArray.push({
-            time: (event.timeStamp / 1000).toFixed(2),
+        this.eventArray.push({
+            time: (event.originalEvent.timeStamp / 1000).toFixed(2),
             timePassed: (timeOnLastDiv / 1000).toFixed(2),
-            type: event.type,
-            button: "Report Phish Button"
+            type: event.originalEvent.type,
+            target: buttonName
         });
 
-        localStorage.setItem('events', JSON.stringify(eventArray));
-        // }
+        localStorage.setItem('button', JSON.stringify(this.eventArray));
+
     }
 }

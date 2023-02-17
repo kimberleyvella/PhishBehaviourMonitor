@@ -31,9 +31,7 @@ let current = '';
         }
 
         function isInDiv(X, Y, querySelector) {
-            // The issue lies with the below line of code
             let target = document.querySelector(querySelector);
-            // console.log(target)
             let width_target = target.offsetWidth;
             let height_target = target.offsetHeight;
 
@@ -74,7 +72,7 @@ let current = '';
                     time: (event.timeStamp / 1000).toFixed(2),
                     x: X,
                     y: Y,
-                    position: current,
+                    target: current,
                     timePassed: (timeOnLastDiv / 1000).toFixed(2),
                     type: event.type
                 });
@@ -84,38 +82,48 @@ let current = '';
             }
         }
 
-        function downloadCSV() {
-            var eventArray = JSON.parse(localStorage.getItem("events"));
+        // function downloadCSV() {
+        //     var eventArray = JSON.parse(localStorage.getItem("events"));
+        //     var reportArray = JSON.parse(localStorage.getItem("button"));
 
-            if (!eventArray) {
-                return;
-            }
-            let csv = "Time, x-coordinate, y-coordinate, Color, Time Passed, Type, Button\n";
-            eventArray.forEach(function (row) {
-                csv += row.time + "," + row.x + "," + row.y + "," + row.position + "," + row.timePassed + "," + row.type + "," + row.button + "\n";
-            });
-            let csvFile = new Blob([csv], { type: "text/csv" });
-            let downloadLink = document.createElement("a");
-            downloadLink.download = "events.csv";
-            downloadLink.href = URL.createObjectURL(csvFile);
-            downloadLink.style.display = "none";
+        //     if (!eventArray || !reportArray) {
+        //         return;
+        //     }
+        //     let csv = "Time, Type, Target, Extra\n";
+        //     eventArray.forEach(function (row) {
+        //         csv += row.time + "," +row.type + "," + row.position + "," + row.x + ":" + row.y + "\n";
+        //     });
+        //     reportArray.forEach(function (row) {
+        //         csv += row.time + "," + row.type + ",ReportPhish,?\n";
+        //     });
 
-            document.body.appendChild(downloadLink);
 
-            downloadLink.click();
+        //     let csvFile = new Blob([csv], { type: "text/csv" });
+        //     let downloadLink = document.createElement("a");
+        //     downloadLink.download = "events.csv";
+        //     downloadLink.href = URL.createObjectURL(csvFile);
+        //     downloadLink.style.display = "none";
 
-            document.body.removeChild(downloadLink);
-        }
-        let downloadButton = document.createElement("button");
-        downloadButton.innerHTML = "Download CSV";
-        downloadButton.onclick = downloadCSV;
-        document.body.appendChild(downloadButton);
+        //     document.body.appendChild(downloadLink);
+        //     downloadLink.click();
+        //     document.body.removeChild(downloadLink);
+        // }
+
+
+        // let downloadButton = document.createElement("button");
+        // downloadButton.innerHTML = "Download CSV";
+        // downloadButton.onclick = downloadCSV;
+        // document.body.appendChild(downloadButton);
 
         document.addEventListener("mousemove", display);
         document.onload = pageLoaded;
-        window.addEventListener('reportPhish', function(){
-            reportPhish();
-        });
+        window.addEventListener('load', () => {
+            localStorage.clear();
+          });
+          
+        //window.addEventListener('reportPhish', function(){
+            //reportPhish();
+        //});
         // reportPhishBtn = document.getElementById("ReportPhish");
         // if(reportPhishBtn != null){
         //     reportPhishBtn.addEventListener("click", btnClick);
