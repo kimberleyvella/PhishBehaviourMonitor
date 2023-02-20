@@ -24,6 +24,7 @@ export class PopupComponent implements OnInit {
         console.log("download csv was pressed download please");
         var eventArray = JSON.parse(localStorage.getItem("events"));
         var reportArray = JSON.parse(localStorage.getItem("button"));
+        var emailArray = JSON.parse(localStorage.getItem("email"));
 
 
         if (!eventArray || !reportArray) {
@@ -37,8 +38,11 @@ export class PopupComponent implements OnInit {
         reportArray.forEach(function (row) {
            // csv += row.time + "," + row.type + ",ReportPhish,?\n";
             csv += row.time + "," + row.type + "," + row.target + ",?\n";
-
         });
+        emailArray.forEach(function (row) {
+            // csv += row.time + "," + row.type + ",ReportPhish,?\n";
+            csv += row.time + "," + row.type + "," + row.target + ",?\n";
+         });
 
 
         let csvFile = new Blob([csv], { type: "text/csv" });

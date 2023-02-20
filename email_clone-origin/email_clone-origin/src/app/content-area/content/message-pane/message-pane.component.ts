@@ -13,6 +13,7 @@ export class MessagePaneComponent implements OnInit {
     @Input() item: Item;
     itemIndex: number = 0;
     eventArray = [];
+    
 
     prevEvent: number = 0;
     /** Configurations for the Message pane page */
@@ -55,7 +56,7 @@ export class MessagePaneComponent implements OnInit {
     }
 
 
-    public listViewSelect(args: SelectEventArgs & { index: number }): void {
+    public listViewSelect(args: SelectEventArgs): void {
         this._data.selectedListElement = args.item as HTMLElement;
 
         let data: { [key: string]: Object } = args.data as { [key: string]: Object };
@@ -108,22 +109,8 @@ export class MessagePaneComponent implements OnInit {
                     'MsoNormal%22%3EBest%20Regards,%3Cbr%3E%0AYour%20Name%3Co:p%3E%3C/o:p%3E%3C/p%3E%0A%0A%20%20%20%20%3C/div%3E');
         }
 
-        // timing and perfomance in epoch 
-        //console.log("Page load took " +(Date.now()) + "milliseconds");
-        //console.log(window.performance);
-
-    }
-
-    public ngOnInit(): void {
-    }
-
-    public ngAfterViewInit(): void {
-        this._data.grpListObj = this.grpListObj;
-    }
-
-    public changeOfEmails(event): void {
-
-        let sender = document.querySelector('.sender-style').textContent;
+        //let sender = args.data as { [key: string]: string };
+        let sender = args.item.querySelector('.sender-style').textContent;
         let timeOnLastDiv = this.prevEvent ? (Date.now() - this.prevEvent) / 1000 : 0;
         this.prevEvent = Date.now();
         let line = "Timing: " + Math.round(this.prevEvent / 1000) + " Change of email";
@@ -141,7 +128,41 @@ export class MessagePaneComponent implements OnInit {
 
         localStorage.setItem('email', JSON.stringify(this.eventArray));
 
+
+        // timing and perfomance in epoch 
+        //console.log("Page load took " +(Date.now()) + "milliseconds");
+        //console.log(window.performance);
+
     }
+
+    public ngOnInit(): void {
+    }
+
+    public ngAfterViewInit(): void {
+        this._data.grpListObj = this.grpListObj;
+    }
+
+    // public changeOfEmails(event): void {
+
+    //     let sender = document.querySelector('.sender-style').textContent;
+    //     let timeOnLastDiv = this.prevEvent ? (Date.now() - this.prevEvent) / 1000 : 0;
+    //     this.prevEvent = Date.now();
+    //     let line = "Timing: " + Math.round(this.prevEvent / 1000) + " Change of email";
+    //     let line2 = "Time passed: " + timeOnLastDiv.toFixed(2);
+    //     console.log(line);
+    //     console.log(line2);
+    //     console.log("Sender div class name: " + sender);
+
+    //     this.eventArray.push({
+    //         time: (event.timeStamp / 1000).toFixed(2),
+    //         timePassed: (timeOnLastDiv / 1000).toFixed(2),
+    //         type: event.type,
+    //         target: sender
+    //     });
+
+    //     localStorage.setItem('email', JSON.stringify(this.eventArray));
+
+    //}
 }
 //function getCursorPosition(event){
   //  document.getElementById("c_p_x").textContent = event.clientX;

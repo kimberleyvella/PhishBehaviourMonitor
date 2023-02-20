@@ -30,18 +30,33 @@ let current = '';
             prevEvent = event.timeStamp;
         }
 
+        // function isInDiv(X, Y, querySelector) {
+        //     let target = document.querySelector(querySelector);
+        //     let width_target = target.offsetWidth;
+        //     let height_target = target.offsetHeight;
+
+        //     const domRect_target = target.getBoundingClientRect();
+        //     if ((X > domRect_target.x && X < domRect_target.x + width_target) &&
+        //         (Y > domRect_target.y && Y < domRect_target.y + height_target)) {
+        //         return true;
+        //     }
+        //     return false;
+
+        // }
         function isInDiv(X, Y, querySelector) {
             let target = document.querySelector(querySelector);
+            if (!target) {
+                return false;
+            }
             let width_target = target.offsetWidth;
             let height_target = target.offsetHeight;
-
+        
             const domRect_target = target.getBoundingClientRect();
             if ((X > domRect_target.x && X < domRect_target.x + width_target) &&
                 (Y > domRect_target.y && Y < domRect_target.y + height_target)) {
                 return true;
             }
             return false;
-
         }
         function display(event) {
             let X = event.clientX;
