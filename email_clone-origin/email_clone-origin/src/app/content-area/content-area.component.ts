@@ -104,8 +104,8 @@ export class ContentAreaComponent implements AfterContentInit {
         document.getElementById('btnCloseButton').addEventListener('click', this.btnCloseClick.bind(this));
         document.onclick = this.documentClick.bind(this);
         document.ondblclick = this.documentDoubleClick.bind(this);
-        let popupContent: HTMLElement = document.getElementById('popupContent');
-        popupContent.onclick = this.popupContentClick.bind(this);
+        // let popupContent: HTMLElement = document.getElementById('popupContent');
+        // popupContent.onclick = this.popupContentClick.bind(this);
     }
 
     public treeMenuBeforeOpen(args: BeforeOpenCloseMenuEventArgs): void {
