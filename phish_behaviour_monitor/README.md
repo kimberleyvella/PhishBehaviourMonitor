@@ -1,27 +1,30 @@
-# Essential JS 2 for Angular - Webmail
+# User Behaviour Monitor using Angular
 
-This Webmail demo application showcases the usage of several Essential JS 2 components in a real world application scenario. This demo explores a mailbox user interface which was inspired by the Outlook Office 365 application.
+## Installation
 
-## Deployment
+Clone this repository: `git clone https://github.com/kimberleyvella/PhishBehaviourMonitor.git`.
+Download **[Visual Studio Code](https://code.visualstudio.com/#alt-downloads)**.
 
-### Install
+### Windows
 
-To install all dependent packages, use the below command
+1. Download **[NodeJS](https://nodejs.org/download/release/v16.14.0/)** version **16.14.0**.
+   Verify installation using `node -v`.
+2. Write the following commands in the **CMD** to download Angular version **10.0.1**:
+    ```
+    npm install -g npm
+    npm install -g @angular/cli@10.0.1
+    ```
+    Verify installation using `ng version`.
+3. Go to the `src` folder using
+   `cd PhishBehaviourMonitor/phish_behaviour_monitor/src`.
+4. Install node dependencies with `npm install`.
 
-```
-npm install
-```
+### Mac/Linux
 
-### Run
+1. Go to the `phish_behaviour_monitor` folder using
+   `cd PhishBehaviourMonitor/phish_behaviour_monitor`.
+2. Run the installation script for mac/linux (other.sh) using `./other.sh`
 
-To run the sample, use the below command
+### Running the Prototype
 
-```
-ng serve
-```
-
-## Demo
-
-#### <a href="https://ej2.syncfusion.com/showcase/angular/webmail/" target="_blank">https://ej2.syncfusion.com/showcase/angular/webmail/</a>
-
-Check all the showcase samples from <a href="https://ej2.syncfusion.com/home/angular.html" target="_blank">here</a>.
+To run the project write: `npm start` or `ng serve --open`
