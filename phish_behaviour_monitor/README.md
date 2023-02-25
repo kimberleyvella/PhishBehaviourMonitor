@@ -2,8 +2,8 @@
 
 ## Installation
 
-Clone this repository: `git clone https://github.com/kimberleyvella/PhishBehaviourMonitor.git`.
-Download **[Visual Studio Code](https://code.visualstudio.com/#alt-downloads)**.
+- Clone this repository: `git clone https://github.com/kimberleyvella/PhishBehaviourMonitor.git`.
+- Download **[Visual Studio Code](https://code.visualstudio.com/#alt-downloads)**.
 
 ### Windows
 
