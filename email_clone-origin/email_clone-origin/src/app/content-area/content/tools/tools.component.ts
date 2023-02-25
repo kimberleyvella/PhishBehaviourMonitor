@@ -3,7 +3,6 @@ import { ToolbarComponent, ClickEventArgs } from '@syncfusion/ej2-angular-naviga
 import { AutoCompleteComponent, ChangeEventArgs, SelectEventArgs as DropDownSelectEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 import { getContacts } from '../../../data/datasource';
 import { DataService } from '../../../data-service';
-import * as detection from "src/scripts/detection.js";
 
 @Component({
     selector: 'tools-section',
@@ -14,7 +13,6 @@ import * as detection from "src/scripts/detection.js";
 export class ToolsComponent implements OnInit {
 
     eventArray = [];
-
     prevEvent: number = 0;
     /** Configurations for the Tools page */
     constructor(private _data: DataService, private chgRef: ChangeDetectorRef) {
@@ -108,10 +106,10 @@ export class ToolsComponent implements OnInit {
     }
 
     public ngOnInit(): void {
-        const reportPhishBtn = document.getElementById('ReportPhish');
-        if (reportPhishBtn) {
-            reportPhishBtn.addEventListener('click', this.reportPhish.bind(this));
-        }
+    //     const reportPhishBtn = document.getElementById('ReportPhish');
+    //     if (reportPhishBtn) {
+    //         reportPhishBtn.addEventListener('click', this.reportPhish.bind(this));
+    //     }
     }
 
     public ngAfterViewInit(): void {

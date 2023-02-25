@@ -8,7 +8,7 @@ import { userName, userMail } from '../../data/datasource';
 })
 
 export class PopupComponent implements OnInit {
-    
+
     /** Configurations for the popup page */
     constructor() {
     }
@@ -19,7 +19,7 @@ export class PopupComponent implements OnInit {
 
     public ngOnInit(): void {
     }
-    
+
     public downloadCSV() {
         console.log("download csv was pressed download please");
         var eventArray = JSON.parse(localStorage.getItem("events"));
@@ -33,16 +33,14 @@ export class PopupComponent implements OnInit {
         }
         let csv = "Time, Type, Target, Extra\n";
         eventArray.forEach(function (row) {
-            csv += row.time + "," +row.type + "," + row.target + "," + row.x + ":" + row.y + "\n";
+            csv += row.time + "," + row.type + "," + row.target + "," + row.x + ":" + row.y + "\n";
         });
         reportArray.forEach(function (row) {
-           // csv += row.time + "," + row.type + ",ReportPhish,?\n";
             csv += row.time + "," + row.type + "," + row.target + ",?\n";
         });
         emailArray.forEach(function (row) {
-            // csv += row.time + "," + row.type + ",ReportPhish,?\n";
             csv += row.time + "," + row.type + "," + row.target + ",?\n";
-         });
+        });
 
 
         let csvFile = new Blob([csv], { type: "text/csv" });
@@ -55,5 +53,5 @@ export class PopupComponent implements OnInit {
         downloadLink.click();
         document.body.removeChild(downloadLink);
     }
-    
+
 }

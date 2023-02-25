@@ -30,7 +30,7 @@
                     </div>
                 </ng-template>
             </e-item>
-            <e-item prefixIcon='ej-icon-Delete tb-icons' (click)="reportPhish($event, 'Delete button')"text='Delete' cssClass='tb-item-Selected' tooltipText='Delete'>
+            <e-item prefixIcon='ej-icon-Delete tb-icons' (click)="reportPhish($event, 'Delete button')" text='Delete' cssClass='tb-item-Selected' tooltipText='Delete'>
             </e-item>
             <e-item id="ReportPhish" text='Report Phish' (click)="reportPhish($event, 'Report Phish button')" cssClass='tb-item-Selected' tooltipText='Report Phish'></e-item>
             <e-item text='Junk' cssClass='tb-item-Selected'(click)="reportPhish($event, 'Junk button')" tooltipText='Mark the sender as unsafe and delete the message'>
@@ -122,7 +122,8 @@
             <e-item prefixIcon='ej-icon-Attach' tooltipText='Attach' align='right'
                 cssClass='tb-item-back tb-item-newmail-option'>
             </e-item>
-            <e-item prefixIcon='ej-icon-Delete' tooltipText='Delete' align='right' cssClass='tb-item-back'>
+            <!-- <e-item prefixIcon='ej-icon-Delete' tooltipText='Delete' align='right' cssClass='tb-item-back'> -->
+            <e-item prefixIcon='ej-icon-Delete' (click)="reportPhish($event, 'Delete button')"  align='right' cssClass='tb-item-back' tooltipText='Delete'>
             </e-item>
             <e-item prefixIcon='ej-icon-Reply-All' tooltipText='Reply All' align='right' cssClass='tb-item-back'>
             </e-item>

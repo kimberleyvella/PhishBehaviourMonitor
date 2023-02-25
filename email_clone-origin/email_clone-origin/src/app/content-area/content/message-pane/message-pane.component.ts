@@ -35,8 +35,8 @@ export class MessagePaneComponent implements OnInit {
             '<div class="sender-style" style="float:left; margin-top: 2px">${text}</div>' +
             '<div style="right:25px; position: absolute; margin-top: 2px; pointer-events:all;">' +
             '<button id="btnListDelete" title="Delete" class="listview-btn">' +
-            '<span class="e-btn-icon ej-icon-Delete"></span>' +
-            '</button>' +
+            // '<span class="e-btn-icon ej-icon-Delete"></span>' +
+            // '</button>' +
             '<button id="btnListFlag" title="${FlagTitle}" class="listview-btn">' +
             '<span class="e-btn-icon ej-icon-Flag_1 ${Flagged}"></span>' +
             '</button>' +
@@ -128,11 +128,6 @@ export class MessagePaneComponent implements OnInit {
 
         localStorage.setItem('email', JSON.stringify(this.eventArray));
 
-
-        // timing and perfomance in epoch 
-        //console.log("Page load took " +(Date.now()) + "milliseconds");
-        //console.log(window.performance);
-
     }
 
     public ngOnInit(): void {
@@ -164,8 +159,3 @@ export class MessagePaneComponent implements OnInit {
 
     //}
 }
-//function getCursorPosition(event){
-  //  document.getElementById("c_p_x").textContent = event.clientX;
-    //document.getElementById("c_p_y").textContent = event.clientY;
-
-//}
