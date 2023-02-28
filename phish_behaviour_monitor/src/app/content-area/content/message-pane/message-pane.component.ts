@@ -34,12 +34,6 @@ export class MessagePaneComponent implements OnInit {
             '<div style="height:30px; pointer-events:none;">' +
             '<div class="sender-style" style="float:left; margin-top: 2px">${text}</div>' +
             '<div style="right:25px; position: absolute; margin-top: 2px; pointer-events:all;">' +
-            '<button id="btnListDelete" title="Delete" class="listview-btn">' +
-            // '<span class="e-btn-icon ej-icon-Delete"></span>' +
-            // '</button>' +
-            '<button id="btnListFlag" title="${FlagTitle}" class="listview-btn">' +
-            '<span class="e-btn-icon ej-icon-Flag_1 ${Flagged}"></span>' +
-            '</button>' +
             '<button id="btnListRead" title="${ReadTitle}" class="listview-btn">' +
             '<span class="e-btn-icon ej-icon-Mark-as-read"></span>' +
             '</button>' +

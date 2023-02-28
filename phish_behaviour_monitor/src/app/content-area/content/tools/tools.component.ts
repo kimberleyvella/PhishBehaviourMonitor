@@ -32,10 +32,9 @@ export class ToolsComponent implements OnInit {
     ];
     public moveToList: { [key: string]: Object }[] = [
         { text: 'Inbox' }, { text: 'Sent Items' }, { text: 'Clutter' }, { text: 'Drafts' },
-        { text: 'Deleted Items' }, { text: 'Archive' }, { text: 'Junk Mail' }, { text: 'Outbox' },
-        { text: 'Personnel' }, { text: 'Sales Reports' }, { text: 'Marketing Reports' },
-        { text: 'Richelle Mead' }, { text: 'krystine hobson' }
+        { text: 'Deleted Items' }, { text: 'Archive' }, { text: 'Junk Mail' }, { text: 'Outbox' }
     ];
+    
     public categoryList: { [key: string]: Object }[] = [
         { text: 'Blue category', color: 'blue', categoryStyle: 'blue-background' },
         { text: 'Red category', color: 'red', categoryStyle: 'red-background' },
@@ -106,10 +105,6 @@ export class ToolsComponent implements OnInit {
     }
 
     public ngOnInit(): void {
-    //     const reportPhishBtn = document.getElementById('ReportPhish');
-    //     if (reportPhishBtn) {
-    //         reportPhishBtn.addEventListener('click', this.reportPhish.bind(this));
-    //     }
     }
 
     public ngAfterViewInit(): void {
@@ -121,7 +116,7 @@ export class ToolsComponent implements OnInit {
         this.chgRef.detectChanges();
     }
 
-    public reportPhish(event, buttonName): void {  
+    public reportButton(event, buttonName): void {  
         
         let timeOnLastDiv = this.prevEvent ? (Date.now() - this.prevEvent) / 1000 : 0;
         this.prevEvent = Date.now();
@@ -140,4 +135,39 @@ export class ToolsComponent implements OnInit {
         localStorage.setItem('button', JSON.stringify(this.eventArray));
 
     }
+
+    public downloadCSV() {
+        console.log("download csv was pressed download please");
+        var eventArray = JSON.parse(localStorage.getItem("events"));
+        var reportArray = JSON.parse(localStorage.getItem("button"));
+        var emailArray = JSON.parse(localStorage.getItem("email"));
+
+
+        if (!eventArray || !reportArray) {
+            console.log("This should not happen the local storage should have data");
+            return;
+        }
+        let csv = "Time, Type, Target, Extra\n";
+        eventArray.forEach(function (row) {
+            csv += row.time + "," + row.type + "," + row.target + "," + row.x + ":" + row.y + "\n";
+        });
+        reportArray.forEach(function (row) {
+            csv += row.time + "," + row.type + "," + row.target + ",?\n";
+        });
+        emailArray.forEach(function (row) {
+            csv += row.time + "," + row.type + "," + row.target + ",?\n";
+        });
+
+
+        let csvFile = new Blob([csv], { type: "text/csv" });
+        let downloadLink = document.createElement("a");
+        downloadLink.download = "events.csv";
+        downloadLink.href = URL.createObjectURL(csvFile);
+        downloadLink.style.display = "none";
+
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        document.body.removeChild(downloadLink);
+    }
+
 }

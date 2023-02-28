@@ -192,7 +192,4 @@ export class ReadingPaneComponent implements AfterViewInit {
                 'MsoNormal%22%3EBest%20Regards,%3Cbr%3E%0AYour%20Name%3Co:p%3E%3C/o:p%3E%3C/p%3E%0A%0A%20%20%20%20%3C/div%3E');
         }
     }
-    public reportPhish(): void{
-        alert("The report phish button was pressed");
-    }
 }

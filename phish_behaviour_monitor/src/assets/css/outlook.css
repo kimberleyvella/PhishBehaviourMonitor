@@ -761,7 +761,7 @@ html, body {
 /* Defining style for Reading Pane Content */
 
 .logo {
-    background: url(../images/3.png) no-repeat 100% 100%;
+    background: url(../images/profile_pic.png) no-repeat 100% 100%;
     border-radius: 50%;
 }
 
@@ -788,7 +788,7 @@ html, body {
 }
 
 .profile-pic {
-    background: url(../images/1.png) no-repeat 100% 100%;
+    background: url(../images/small_profile_pic.png) no-repeat 100% 100%;
 }
 
 .messageHeader {
