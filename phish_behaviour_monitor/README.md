@@ -23,7 +23,10 @@
 
 1. Go to the `phish_behaviour_monitor` folder using
    `cd PhishBehaviourMonitor/phish_behaviour_monitor`.
-2. Run the installation script for mac/linux (other.sh) using `./other.sh`
+2. For Ubuntu run: `sudo apt update && sudo apt upgrade`
+3. To install curl: `sudo apt install curl`
+4. Verify installation using `curl --version`
+5. Run the installation script for mac/linux (other.sh) using `./other.sh`
 
 ### Running the Prototype
 
