@@ -11,7 +11,7 @@ then
         sudo apt install curl
     fi
 
-    echo "Curl Version " `curl --version§ " Installed"
+    echo "Curl Version " `curl --version` " Installed"
 fi
 
 # Install NVM
