@@ -8,10 +8,10 @@
             <e-item prefixIcon='ej-icon-Mark-as-read tb-icons' text='Mark all as read' tooltipText='Mark all as read'
                 cssClass='tb-item-mark-read'>
             </e-item>
-            <e-item prefixIcon="ej-icon-Create-New tb-icons" text="Submit" tooltipText="Download Data"
+            <e-item text="↓ Submit" tooltipText="Download Data"
                 cssClass="tb-item-new-mail" (click)="downloadCSV()">
             </e-item>
-            <e-item prefixIcon='ej-icon-Reply-All tb-icons' cssClass='tb-item-Selected tb-item-replyAll'
+            <!-- <e-item prefixIcon='ej-icon-Reply-All tb-icons' cssClass='tb-item-Selected tb-item-replyAll'
                 tooltipText='Reply All'>
                 <ng-template #template>
                     <div>
@@ -32,13 +32,13 @@
                         </ejs-dropdownlist>
                     </div>
                 </ng-template>
-            </e-item>
+            </e-item> -->
             <e-item prefixIcon='ej-icon-Delete tb-icons' (click)="reportButton($event, 'Delete button')" text='Delete' cssClass='tb-item-Selected' tooltipText='Delete'>
             </e-item>
             <e-item id="ReportPhish" text='Report Phish' (click)="reportButton($event, 'Report Phish button')" cssClass='tb-item-Selected' tooltipText='Report Phish'></e-item>
             <e-item text='Junk' cssClass='tb-item-Selected'(click)="reportButton($event, 'Junk button')" tooltipText='Mark the sender as unsafe and delete the message'>
             </e-item>
-            <e-item cssClass='tb-item-Selected' tooltipText='Move To'>
+            <!-- <e-item cssClass='tb-item-Selected' tooltipText='Move To'>
                 <ng-template #template>
                     <div>
                         <ejs-dropdownlist id='moveToList' #moveList [dataSource]='moveToList'
@@ -72,7 +72,7 @@
                         </ejs-dropdownlist>
                     </div>
                 </ng-template>
-            </e-item>
+            </e-item> 
             <e-item cssClass='tb-item-more tb-item-Selected' tooltipText='More actions'>
                 <ng-template #template>
                     <div>
@@ -86,7 +86,7 @@
                         </ejs-dropdownlist>
                     </div>
                 </ng-template>
-            </e-item>
+            </e-item> -->
            <!-- <e-item prefixIcon='ej-icon-Copy tb-icons' align='right' cssClass='tb-item-Selected'
                 tooltipText='Open in a separate window'> 
             </e-item>-->
@@ -119,7 +119,7 @@
             <e-item prefixIcon='ej-icon-New' tooltipText='Write a new message' align='right'
                 cssClass='tb-item-front'>
             </e-item>
-            <e-item prefixIcon="ej-icon-Create-New tb-icons" text="Submit" tooltipText="Download Data"
+            <e-item text="↓ Submit" tooltipText="Download Data"
                 cssClass="tb-item-new-mail" (click)="downloadCSV()">
             </e-item>
             <e-item prefixIcon='ej-icon-Send' tooltipText='Send' align='right'
