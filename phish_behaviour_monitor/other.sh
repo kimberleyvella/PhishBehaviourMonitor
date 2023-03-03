@@ -1,10 +1,17 @@
 #!/usr/bin/env bash
 
+sudo apt update && sudo apt upgrade
+ostype=$(uname)
+
 # Check for curl
 if ! command -v curl &> /dev/null
 then
-    echo "curl could not be found. Please install curl and try again."
-    exit
+    if [[ "$ostype" == "linux" ]] 
+    then
+        sudo apt install curl
+    fi
+
+    echo "Curl Version " `curl --version§ " Installed"
 fi
 
 # Install NVM
