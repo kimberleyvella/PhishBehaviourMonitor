@@ -6,7 +6,7 @@ ostype=$(uname)
 # Check for curl
 if ! command -v curl &> /dev/null
 then
-    if [[ "$ostype" == "linux" ]] 
+    if [[ "$ostype" == "Linux" ]] 
     then
         sudo apt install curl
     fi
