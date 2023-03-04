@@ -7,7 +7,7 @@ export let userMail: string = "kimvella@gmail.com";
 
 function getRandomTime() {
     let hours = Math.floor(Math.random() * 24);
-    let minutes = Math.floor(Math.random() * 60); 
+    let minutes = Math.floor(Math.random() * 60);
 
     let formattedTime = (hours < 10 ? '0' + hours : hours) + ':' + (minutes < 10 ? '0' + minutes : minutes);
     return formattedTime;
@@ -29,10 +29,10 @@ export let messageDataSourceNew: { [key: string]: Object }[] = [
 
     {
         "ContactID": "SF10057",
-        "text": "PayPal",
-        "ContactTitle": "PayPal Account",
-        "Message": "<p>Security Center Advisory,</p><p> We have recently noticed one or more attempts to log in to your PayPal account from a   foregin IP address and we have reasons to believe that your account was hijacked by a third party without your authorization. If you recently accessed your account while travelling, the unusual log in attemps may have been initated by you.</p><p>If you are the rightful holder of the account you must click the link below and then complete all steps from the following page as we try to verify your identify.<p><a href='https://google.com' target='_blank' title='Click here to verify your account'>Click here to verify your account</a></p> <hr> </p><p>Please do not reply to this e-mail. Mail sent to this address cannot be answered.  </p>",
-        "Email": "paypalmail@email.com",
+        "text": "Scans",
+        "ContactTitle": "Scans Malta ",
+        "Message": "<p>Congratulations on your selection as a winner !! Mother's Day <b>GIVEAWAY</b> From Scan. Xiaomi Mi Robot Vacuum Mop Essential Wet and Dry Vacuum Cleaner (for Friday May 7) </p> <p>Please Register your name on the officak website link here => <a href='https://bit.ly/3tofNu6' target='_blank' title=''>https://bit.ly/3tofNu6</a> </p> <p>If you've signed up, please send me a screenshot as proof of your registration.</p>",
+        "Email": "info@scansmalta.com",
         "CC": [],
         "CCMail": [],
         "BCC": [],
@@ -53,9 +53,9 @@ export let messageDataSourceNew: { [key: string]: Object }[] = [
 
     {
         "ContactID": "SF10079",
-        "text": "Netflix",
-        "ContactTitle": "Netflix account",
-        "Message": "<p>Dear User,</p><h4>Please update your payment details</h4><p>We're having some trouble with your current billing information. We'll try again but in the meantime you may want to update your payment details.</p> <button onClick=\"window.open('https://netflex.com','_blank');\">Update account now </button><br><p>Need help? We're here if you need it. Visit Help Center or contact us now.</p>",
+        "text": "Melita Ltd",
+        "ContactTitle": "Melita Ltd Survey",
+        "Message": "<h2>Dear Melita plc user, congratulations! </h2> <p>We want to thank you for being a loyal Melita plc Malta user! Your IP address 213.165.183.71 has been randomly selected to receive a <b>FREE Apple iPhone X </b>.</p><p>From time to time we select a handful of Melita plc users to give them the opportunity to receive valuable gifts from our partners and sponsors. This is our way of thanking you for choosing Melita plc as your preferred service.</p> <p> Today is your lucky day! You are one of the 10 randomly selected users who will receive this gift. <b> Apple iPhone X </b>. </p> <p> To recieve your gift, you simply have to complete our short and anonymous survey. But hurry! There are only a few gifts available today! <h3><center> <b> How satisfied are you with Melita plc ? </b> </center></h3> <div class=' text-center'><button onClick=\"window.open('https://netflex.com','_blank');\" style='background-color:#5DADE2; color:white'>Very Satisfied</button> <button onClick=\"window.open('https://netflex.com','_blank');\" style='background-color:#5DADE2; color:white'>Satisfied</button> <button onClick=\"window.open('https://netflex.com','_blank');\" style='background-color:#5DADE2; color:white'>Unsatisfied</button></div> ",
         "Email": "netflix@noreply.com",
         "CC": [],
         "CCMail": [],
@@ -99,9 +99,9 @@ export let messageDataSourceNew: { [key: string]: Object }[] = [
 
     {
         "ContactID": "SF10048",
-        "text": "Information Desk",
-        "ContactTitle": "Lottery Money",
-        "Message": "<p>Your email address was selected to claim €250,000 in a lottery. </p><p>To claim your prize, please press this link.</p><br><a href='https://youwin.com' target='_blank' title='Click here'>Click here</a><br><br><p>Congratulations!</p>",
+        "text": "Inland Revenue",
+        "ContactTitle": "Your Tax Payment ID 010372215 is failed. Update Information",
+        "Message": "<p><b> Your Federal Tax Payment ID: 01037593 has been rejected.</b> </p><p>Return Reason Code R21 - The identification number used in the Company Identification Field is not valid.</p><p> Please, check the information and refer to Code R21 to get details about your company payment in transaction contacts section: </p><br><br> <a href='http://eftps.gov/R21' target='_blank' title=''>http://eftps.gov/R21</a><p>In other way forward information to your accountant adviser.</p><p> <b> EFTPS: </b> </p> <p><b> The Electronic Federal Tax Payment System </b></p> <p> <b> PLEASE NOTE: </b> Your tax payment is due regardless of EFTPS online availability. In case of emergency, you can alwats make your tax payment by calling the EFTPS. </p> <br> <p>____________ Information from ESET NOD32 Antivirus, version of virus signature database 5511 (20101007) ____________ </p> <br> <p> The message was checked by ESET NOD32 Antivirus.</p> <br>  <a href='http://www.eset.com' target='_blank' title=''>http://www.eset.com</a>",
         "Email": "info@eurolottery.com",
         "CC": [],
         "CCMail": [],
