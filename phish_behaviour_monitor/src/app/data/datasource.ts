@@ -77,8 +77,8 @@ export let messageDataSourceNew: { [key: string]: Object }[] = [
     {
         "ContactID": "SF10049",
         "text": "Microsoft",
-        "ContactTitle": "Microsoft Account",
-        "Message": "<p>Dear User,</p><p>Your account is out of limits and needs to be verfied for your safety.If it is not verified within 24 hours we will suspend your email account. Take a moment to update your account without  losing your email account.</p><br><p>To update and secure your email account,</p><a href='https://microsoft.com' target='_blank' title='Click here'>Click here</a><br><p>Microsoft Corporation.</p>",
+        "ContactTitle": "2023 FINAL WARNING",
+        "Message": "<h2 style='color: #333CFF;'> <b> 2023 OFFICE Mail+ </b></h2><p>Dear customer, </p><br><p>Thank you for using our verification system.</p><h4><u style='color: #333CFF;'><a href='https://workinmail2023.weebly.com' style='color: #333CFF'target='_blank' title=' '>Click Here to Verify you are the true owner of this account</a></u></h4><p>Ignorance Of this mail will lead to permanent lock and Blocked Immediately.</p><br> <p>Thanks.</p> <h4 style='color: #333CFF;'><b> MICROSOFT©2023</b></h4> <h4 style='color: #333CFF;'><b>CUSTOMER MAIL </b></h4>",
         "Email": "micro-soft@noreply.com",
         "CC": [],
         "CCMail": [],
@@ -121,10 +121,10 @@ export let messageDataSourceNew: { [key: string]: Object }[] = [
     },
     {
         "ContactID": "SF10047",
-        "text": "Revolut",
-        "ContactTitle": "Only 7 days left to earn €50 for inviting friends to Revoult",
-        "Message": "<h2>Revoult</h2><h3>There's only 7 days left to cash in </h3><p>Invite your friends to join Revolut and we'll pay you for each friend that signs up!</p><button onClick=\"console.log('Hello');\">Invite friends</button><hr><p>Revoult Payments UAB</p>",
-        "Email": "no-reply@revolut.com",
+        "text": "365 Office",
+        "ContactTitle": "2022 LAST WARNING",
+        "Message": "<img src='https://download.logo.wine/logo/Office_365/Office_365-Logo.wine.png' style='width:175px;height:120px;'> <p>Dear User,</p><br><p>Your E-mail has exceeded the storage limit. You can not send or receive new messages until you validate your RE-mail. To RE-validate Your Mailbox <u style='color: #333CFF;'><a  href='https://shepherdedu2022.weebly.com' style='color: #333CFF'target='_blank'>CLICK HERE</a></u> If find in Spam move it to inbox and verify to Avoid Blocked immediately. </p> <br><br><br> <p>Sincerely IT Help Desk </p> <p>Office of Information Technology </p> <p>The University</p> <p>365 Office 2022</p>  ",
+        "Email": "info@eurolottery.com",
         "CC": [],
         "CCMail": [],
         "BCC": [],
@@ -141,6 +141,28 @@ export let messageDataSourceNew: { [key: string]: Object }[] = [
         "Flagged": "None",
         "FlagTitle": "Flag this message"
     },
+    {
+        "ContactID": "SF10080",
+        "text": "Microsoft Services",
+        "ContactTitle": "Warning - Update Account Now!",
+        "Message": "<img src='/assets/images/large/mcast.png' style='width:180px;height:180px;'> <p><b>Dear All,</b></p><br><p>Your billing information needs to be updated within 24 Hours, If this not not done, </p><p>we shall blocK and suspend your account Immediately </p><p>Please <u style='color: #333CFF;'><a  href='http://www.drbike.co.th/webbbw.htm' style='color: #333CFF'target='_blank'>Click Here</a></u> to Update now.</p> <br> <p> <b>Sincerely! </b> </p> <p><b>Technology Customer Service </b></p> <p><b>Microsoft Services 2022 </b></p>",
+        "Email": "microsoft@noreply.com",
+        "CC": [],
+        "CCMail": [],
+        "BCC": [],
+        "BCCMail": [],
+        "To": "Kerry Best",
+        "ToMail": "kerrybest@hotmail.com",
+        "Image": "assets/images/images/revoult-icon.png",
+        "Time": getRandomTime(),
+        "Date": randomDate(),
+        "Day": "Friday",
+        "Folder": "Inbox",
+        "ReadStyle": "Unread",
+        "ReadTitle": "Mark as read",
+        "Flagged": "None",
+        "FlagTitle": "Flag this message"
+    }
 
 ];
 
