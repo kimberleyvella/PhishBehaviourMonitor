@@ -782,11 +782,6 @@ html, body {
     background-size: contain;
 }
 
-.popup-logo-style {
-    background: url(../images/images/6.png) no-repeat 100% 100%;
-    border-radius: 50%;
-}
-
 .profile-pic {
     background: url(../images/small_profile_pic.png) no-repeat 100% 100%;
 }

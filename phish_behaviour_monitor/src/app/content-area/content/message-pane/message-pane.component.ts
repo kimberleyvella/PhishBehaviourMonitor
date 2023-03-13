@@ -103,8 +103,8 @@ export class MessagePaneComponent implements OnInit {
                     'MsoNormal%22%3EBest%20Regards,%3Cbr%3E%0AYour%20Name%3Co:p%3E%3C/o:p%3E%3C/p%3E%0A%0A%20%20%20%20%3C/div%3E');
         }
 
-        //let sender = args.data as { [key: string]: string };
-        let sender = args.item.querySelector('.sender-style').textContent;
+        let sender = args.data as { [key: string]: string };
+        //let sender = args.item.querySelector('.sender-style').textContent;
         let timeOnLastDiv = this.prevEvent ? (Date.now() - this.prevEvent) / 1000 : 0;
         this.prevEvent = Date.now();
         let line = "Timing: " + Math.round(this.prevEvent / 1000) + " Change of email";
@@ -117,7 +117,8 @@ export class MessagePaneComponent implements OnInit {
             time: (event.timeStamp / 1000).toFixed(2),
             timePassed: (timeOnLastDiv / 1000).toFixed(2),
             type: event.type,
-            target: sender
+            target: sender.text,
+            id: sender.ContactID
         });
 
         localStorage.setItem('email', JSON.stringify(this.eventArray));
