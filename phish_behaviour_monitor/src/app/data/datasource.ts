@@ -492,13 +492,6 @@ export let folderData: { [key: string]: Object }[] =
         "Expanded": false,
         "Count": messageDataSourceNew.length
     }, {
-        "ID": 9,
-        "PID": 7,
-        "Name": "Clutter",
-        "HasChild": false,
-        "Expanded": false,
-        "Count": ""
-    }, {
         "ID": 10,
         "PID": 7,
         "Name": "Drafts",
@@ -530,13 +523,6 @@ export let folderData: { [key: string]: Object }[] =
         "ID": 14,
         "PID": 7,
         "Name": "Junk Mail",
-        "HasChild": false,
-        "Expanded": false,
-        "Count": ""
-    }, {
-        "ID": 21,
-        "PID": 7,
-        "Name": "Trash",
         "HasChild": false,
         "Expanded": false,
         "Count": ""

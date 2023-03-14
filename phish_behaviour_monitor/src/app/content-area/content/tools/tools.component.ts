@@ -31,7 +31,7 @@ export class ToolsComponent implements OnInit {
         { text: 'Reply' }, { text: 'Reply All' }, { text: 'Forward' }
     ];
     public moveToList: { [key: string]: Object }[] = [
-        { text: 'Inbox' }, { text: 'Sent Items' }, { text: 'Clutter' }, { text: 'Drafts' },
+        { text: 'Inbox' }, { text: 'Sent Items' }, { text: 'Drafts' },
         { text: 'Deleted Items' }, { text: 'Archive' }, { text: 'Junk Mail' }, { text: 'Outbox' }
     ];
     
