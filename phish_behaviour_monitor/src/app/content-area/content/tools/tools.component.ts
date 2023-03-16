@@ -147,15 +147,15 @@ export class ToolsComponent implements OnInit {
             console.log("This should not happen the local storage should have data");
             return;
         }
-        let csv = "Time, Type, Target, Extra\n";
+        let csv = "Time, Type, Target, EmailID, Extra\n";
         eventArray.forEach(function (row) {
-            csv += row.time + "," + row.type + "," + row.target + "," + row.x + ":" + row.y + "\n";
+            csv += row.time + "," + row.type + "," + row.target + ","  + "?" + "," + row.x + ":" + row.y +"\n";
         });
         reportArray.forEach(function (row) {
             csv += row.time + "," + row.type + "," + row.target + ",?\n";
         });
         emailArray.forEach(function (row) {
-            csv += row.time + "," + row.type + "," + row.target + ",?\n";
+            csv += row.time + "," + row.type + "," + row.target + "," + row.id + ",?\n";
         });
 
 

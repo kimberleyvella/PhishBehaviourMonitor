@@ -131,26 +131,4 @@ export class MessagePaneComponent implements OnInit {
     public ngAfterViewInit(): void {
         this._data.grpListObj = this.grpListObj;
     }
-
-    // public changeOfEmails(event): void {
-
-    //     let sender = document.querySelector('.sender-style').textContent;
-    //     let timeOnLastDiv = this.prevEvent ? (Date.now() - this.prevEvent) / 1000 : 0;
-    //     this.prevEvent = Date.now();
-    //     let line = "Timing: " + Math.round(this.prevEvent / 1000) + " Change of email";
-    //     let line2 = "Time passed: " + timeOnLastDiv.toFixed(2);
-    //     console.log(line);
-    //     console.log(line2);
-    //     console.log("Sender div class name: " + sender);
-
-    //     this.eventArray.push({
-    //         time: (event.timeStamp / 1000).toFixed(2),
-    //         timePassed: (timeOnLastDiv / 1000).toFixed(2),
-    //         type: event.type,
-    //         target: sender
-    //     });
-
-    //     localStorage.setItem('email', JSON.stringify(this.eventArray));
-
-    //}
 }
