@@ -125,8 +125,14 @@ export class ToolsComponent implements OnInit {
         console.log(line);
         console.log(line2);
 
+        let totalSeconds = event.originalEvent.timeStamp / 1000;
+        let minutes = Math.floor(totalSeconds / 60);
+        let seconds = Math.floor(totalSeconds % 60);
+        let milliseconds = Math.floor((totalSeconds % 1) * 1000).toFixed(0).slice(-2);
+        let timeString = `${minutes}:${seconds}:${milliseconds}`;
+
         this.eventArray.push({
-            time: (event.originalEvent.timeStamp / 1000).toFixed(2),
+            time: timeString,
             timePassed: (timeOnLastDiv / 1000).toFixed(2),
             type: event.originalEvent.type,
             target: buttonName
@@ -137,7 +143,7 @@ export class ToolsComponent implements OnInit {
     }
 
     public downloadCSV() {
-        console.log("download csv was pressed download please");
+        console.log("download csv was pressed");
         var eventArray = JSON.parse(localStorage.getItem("events"));
         var reportArray = JSON.parse(localStorage.getItem("button"));
         var emailArray = JSON.parse(localStorage.getItem("email"));
@@ -148,14 +154,28 @@ export class ToolsComponent implements OnInit {
             return;
         }
         let csv = "Time, Type, Target, EmailID, Extra\n";
-        eventArray.forEach(function (row) {
-            csv += row.time + "," + row.type + "," + row.target + ","  + "?" + "," + row.x + ":" + row.y +"\n";
+        eventArray.forEach(function (row) { 
+        let timeParts = row.time.split(':');
+        let minutes = timeParts[0];
+        let seconds = timeParts[1];
+        let milliseconds = timeParts[2];
+        csv += `${minutes}:${seconds}.${milliseconds},${row.type},${row.target},?,${row.x}:${row.y}\n`;
         });
         reportArray.forEach(function (row) {
-            csv += row.time + "," + row.type + "," + row.target + ",?\n";
+            let timeParts = row.time.split(':');
+        let minutes = timeParts[0];
+        let seconds = timeParts[1];
+        let milliseconds = timeParts[2];
+        csv += `${minutes}:${seconds}.${milliseconds},${row.type},${row.target},?\n`;
+        
         });
         emailArray.forEach(function (row) {
-            csv += row.time + "," + row.type + "," + row.target + "," + row.id + ",?\n";
+        let timeParts = row.time.split(':');
+        let minutes = timeParts[0];
+        let seconds = timeParts[1];
+        let milliseconds = timeParts[2];
+        csv += `${minutes}:${seconds}.${milliseconds},${row.type},${row.target},${row.id},?\n`;
+        
         });
 
 

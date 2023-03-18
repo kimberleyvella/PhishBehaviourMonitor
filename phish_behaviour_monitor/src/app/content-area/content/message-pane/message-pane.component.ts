@@ -113,8 +113,15 @@ export class MessagePaneComponent implements OnInit {
         console.log(line2);
         console.log("Sender div class name: " + sender);
 
+        let totalSeconds = event.timeStamp / 1000;
+        let minutes = Math.floor(totalSeconds / 60);
+        let seconds = Math.floor(totalSeconds % 60);
+        let milliseconds = Math.floor((totalSeconds % 1) * 1000).toFixed(0).slice(-2);
+        let timeString = `${minutes}:${seconds}:${milliseconds}`;
+        
+
         this.eventArray.push({
-            time: (event.timeStamp / 1000).toFixed(2),
+            time: timeString,
             timePassed: (timeOnLastDiv / 1000).toFixed(2),
             type: event.type,
             target: sender.text,

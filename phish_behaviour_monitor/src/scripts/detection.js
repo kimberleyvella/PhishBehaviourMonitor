@@ -46,8 +46,14 @@ function display(event) {
         console.log(line);
         console.log(line2);
 
+        let totalSeconds = event.timeStamp / 1000;
+        let minutes = Math.floor(totalSeconds / 60);
+        let seconds = Math.floor(totalSeconds % 60);
+        let milliseconds = Math.floor((totalSeconds % 1) * 1000).toFixed(0).slice(-2);
+        let timeString = `${minutes}:${seconds}:${milliseconds}`;
+
         eventArray.push({
-            time: (event.timeStamp / 1000).toFixed(2),
+            time: timeString,
             x: X,
             y: Y,
             target: current,
