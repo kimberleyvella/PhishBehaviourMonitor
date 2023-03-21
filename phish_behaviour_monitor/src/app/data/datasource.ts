@@ -477,19 +477,18 @@ export let messageDataSourceNew: { [key: string]: Object }[] = [
         "CCMail": [],
         "BCC": [],
         "BCCMail": [],
-        "To": "Kerry Best",
-        "ToMail": "kerrybest@hotmail.com",
+        "To": "",
+        "ToMail": "",
         "Image": "assets/images/large/dropbox-icon.png",
         "Time": getRandomTime(),
         "Date": randomDate(),
-        "Day": "Friday",
+        "Day": "",
         "Folder": "Inbox",
         "ReadStyle": "Unread",
         "ReadTitle": "Mark as read",
         "Flagged": "None",
         "FlagTitle": "Flag this message"
     }
-
 
 ];
 
