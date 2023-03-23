@@ -5,11 +5,11 @@
             <e-item prefixIcon="ej-icon-New tb-icons" text="New" tooltipText="Write a new message"
                 cssClass="tb-item-new-mail">
             </e-item>
-            <e-item prefixIcon='ej-icon-Mark-as-read tb-icons' text='Mark all as read' tooltipText='Mark all as read'
-                cssClass='tb-item-mark-read'>
-            </e-item>
             <e-item text="↓ Submit" tooltipText="Download Data"
                 cssClass="tb-item-new-mail" (click)="downloadCSV()">
+            </e-item>
+            <e-item prefixIcon='ej-icon-Mark-as-read tb-icons' text='Mark all as read' tooltipText='Mark all as read'
+                cssClass='tb-item-mark-read'>
             </e-item>
             <e-item prefixIcon='ej-icon-Delete tb-icons' (click)="reportButton($event, 'Delete button')" text='Delete' cssClass='tb-item-Selected' tooltipText='Delete'>
             </e-item>
