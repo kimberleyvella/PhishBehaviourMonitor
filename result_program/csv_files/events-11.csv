@@ -1,0 +1,147 @@
+Time, Type, Target, EmailID, Extra
+00:02.6,mousemove,sidebar,?,1.136111111
+00:02.9,mousemove,where to choose emails,?,313:397
+00:55.4,mousemove,other,?,719:68
+00:55.7,mousemove,where to read the email,?,888:871
+00:56.3,mousemove,where to choose emails,?,528:164
+00:57.8,click,Mark Egi Bandolin,P1,?
+00:58.6,mousemove,where to read the email,?,679:300
+01:17.6,mousemove,other,?,752:55:00
+01:18.2,mousemove,where to choose emails,?,617:138
+01:18.2,mousemove,where to read the email,?,690:93
+01:18.7,click,Report Phish button,?,
+01:18.7,mousemove,other,?,649:127
+01:19.1,click,Scans,P2,?
+01:19.9,mousemove,where to read the email,?,711:351
+01:23.6,mousemove,other,?,790:77
+01:24.7,mousemove,where to read the email,?,712:93
+01:25.7,mousemove,other,?,713:90
+01:26.2,click,Report Phish button,?,
+01:26.4,mousemove,where to choose emails,?,610:141
+01:26.6,mousemove,where to read the email,?,687:91
+01:26.8,mousemove,other,?,654:114
+01:27.8,click,Google,L1,?
+01:27.9,mousemove,where to read the email,?,655:353
+01:51.4,mousemove,where to read the email,?,833:98
+01:51.4,mousemove,other,?,896:80
+01:52.4,mousemove,other,?,594:131
+01:52.9,mousemove,other,?,653:156
+01:53.0,mousemove,where to choose emails,?,650:157
+01:53.9,click,Delete button,?,
+01:54.4,mousemove,where to choose emails,?,533:143
+01:54.4,click,Melita Ltd,P3,?
+02:03.0,mousemove,other,?,556:129
+02:04.2,mousemove,where to choose emails,?,600:139
+02:04.2,click,Report Phish button,?,
+02:05.2,click,Microsoft OneDrive,L2,?
+02:09.6,mousemove,where to read the email,?,701:386
+02:47.4,mousemove,other,?,827:39:00
+02:57.8,mousemove,where to read the email,?,713:161
+02:58.3,mousemove,where to choose emails,?,611:185
+02:58.4,mousemove,other,?,531:133
+02:59.0,mousemove,where to choose emails,?,538:142
+02:59.5,click,Apple,P4,?
+02:59.7,click,Delete button,?,
+03:00.6,mousemove,where to read the email,?,697:314
+03:36.6,mousemove,where to choose emails,?,641:166
+03:36.9,mousemove,other,?,584:129
+03:38.2,mousemove,where to read the email,?,656:119
+03:48.4,mousemove,other,?,709:90
+03:50.1,mousemove,where to choose emails,?,611:139
+03:50.1,click,Dropbox,L3,?
+03:50.1,click,Report Phish button,?,
+03:50.2,mousemove,other,?,654:111
+03:50.9,mousemove,where to read the email,?,669:97
+03:52.0,mousemove,where to read the email,?,675:470
+04:00.1,mousemove,where to choose emails,?,652:262
+04:00.1,mousemove,other,?,580:132
+04:01.4,mousemove,where to choose emails,?,536:139
+04:01.5,click,Melita,L4,?
+04:01.5,click,Delete button,?,
+04:02.6,mousemove,where to read the email,?,660:237
+04:20.1,mousemove,where to choose emails,?,628:191
+04:20.6,mousemove,other,?,478:128
+04:21.4,click,Delete button,?,
+04:21.4,mousemove,where to choose emails,?,525:143
+04:22.7,click,JIDESH GOVINDANKUTTY NAIR,P5,?
+04:28.9,mousemove,other,?,560:129
+04:29.2,click,Revolut,L5,?
+04:29.4,click,Report Phish button,?,
+04:29.4,mousemove,where to choose emails,?,553:140
+04:30.7,mousemove,where to read the email,?,665:271
+05:07.3,mousemove,where to choose emails,?,628:196
+05:07.6,mousemove,other,?,458:56:00
+05:20.9,mousemove,where to read the email,?,728:160
+05:32.4,mousemove,other,?,614:109
+05:33.1,click,Delete button,?,
+05:33.4,mousemove,where to choose emails,?,549:137
+05:33.4,click,Commissioner for Revenue,P6,?
+05:35.3,mousemove,where to read the email,?,656:274
+06:05.8,mousemove,other,?,654:477
+06:05.9,mousemove,where to choose emails,?,646:465
+06:07.3,mousemove,other,?,705:89
+06:07.8,mousemove,other,?,653:144
+06:07.9,mousemove,where to read the email,?,661:138
+06:10.7,mousemove,where to read the email,?,699:102
+06:30.9,mousemove,where to choose emails,?,650:223
+06:31.9,mousemove,other,?,591:129
+06:32.5,click,Report Phish button,?,
+06:32.6,mousemove,where to choose emails,?,596:144
+06:33.7,mousemove,where to read the email,?,685:321
+06:34.0,click,PayPal,L6,?
+07:09.1,mousemove,other,?,494:128
+07:09.3,mousemove,where to choose emails,?,621:250
+07:10.5,click,Delete button,?,
+07:10.5,mousemove,where to choose emails,?,547:139
+07:11.1,click,Karen Abela,P7,?
+07:12.8,mousemove,other,?,598:134
+07:13.8,click,Report Phish button,?,
+07:13.9,mousemove,where to choose emails,?,586:152
+07:14.5,click,Mulvaney Shannon at Agenzija Zghazagh,L7,?
+07:14.9,mousemove,where to read the email,?,692:278
+07:15.6,mousemove,other,?,652:99
+07:22.8,mousemove,where to read the email,?,664:93
+07:31.0,mousemove,where to choose emails,?,615:246
+07:31.8,mousemove,other,?,501:125
+07:32.4,mousemove,where to choose emails,?,524:138
+07:32.4,click,Delete button,?,
+07:32.9,click,Netflix,P8,?
+07:33.6,mousemove,where to read the email,?,682:382
+07:34.9,mousemove,other,?,654:118
+07:35.1,mousemove,where to choose emails,?,544:150
+07:35.1,click,Report Phish button,?,
+07:35.5,click,Facebook,P9,?
+07:37.8,mousemove,where to read the email,?,666:478
+07:43.2,mousemove,where to choose emails,?,642:220
+07:43.7,mousemove,other,?,548:110
+07:44.8,click,Report Phish button,?,
+07:45.2,mousemove,where to choose emails,?,545:140
+07:45.9,click,Firebase,L8,?
+07:46.6,mousemove,where to read the email,?,661:236
+08:00.1,mousemove,where to choose emails,?,647:137
+08:00.2,mousemove,other,?,639:125
+08:00.6,click,Delete button,?,
+08:01.5,mousemove,where to read the email,?,691:281
+08:01.9,mousemove,where to choose emails,?,554:149
+08:02.0,click,PayPal Billing Department,P10,?
+08:25.6,mousemove,other,?,663:90
+08:26.7,click,Report Phish button,?,
+08:26.9,mousemove,where to choose emails,?,555:144
+08:27.1,click,MCAST IICT No-reply,L9,?
+08:30.8,mousemove,where to read the email,?,669:200
+08:49.1,mousemove,where to choose emails,?,643:172
+08:49.4,mousemove,other,?,606:132
+08:50.2,click,Delete button,?,
+08:50.4,mousemove,where to choose emails,?,527:140
+08:50.6,click,Microsoft,L10,?
+08:51.1,mousemove,where to read the email,?,734:283
+08:51.9,mousemove,other,?,650:237
+09:08.1,mousemove,where to choose emails,?,613:141
+09:08.2,mousemove,other,?,601:95
+09:08.9,mousemove,other,?,641:239
+09:28.1,mousemove,where to read the email,?,722:278
+09:28.9,mousemove,where to choose emails,?,634:172
+09:53.4,mousemove,other,?,646:287
+09:54.6,mousemove,where to choose emails,?,601:203
+09:54.6,mousemove,other,?,628:134
+09:54.6,click,Report Phish button,?,
