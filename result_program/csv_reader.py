@@ -2,7 +2,7 @@ import csv
 from datetime import datetime
 
 # Load CSV file as a list of rows
-with open('csv_files/events-15.csv', 'r') as file:
+with open('csv_files/events-25.csv', 'r') as file:
     reader = csv.reader(file)
     next(reader) # Skip the header row
     rows = [row for row in reader]
@@ -69,7 +69,7 @@ while i < len(rows):
         i += 1
 
 # Save result to CSV
-with open('output_result/events-15-result.csv', 'w', newline='') as file:
+with open('output_result/events-25-result.csv', 'w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(['EmailID','TimeIn', 'TimeOut', 'TotalTime', 'Event', 'CountMoves'])
     for row in result:
