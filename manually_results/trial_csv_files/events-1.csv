@@ -1,0 +1,120 @@
+Time, Type, Target, EmailID, Extra
+0.49,mousemove,where to read the email,?,665:118
+10.09,mousemove,other,?,723:12:00
+10.72,mousemove,where to read the email,?,1448:226
+10.93,mousemove,where to choose emails,?,612:553
+10.99,mousemove,sidebar,?,192:461
+11.39,mousemove,other,?,626:02:00
+11.49,mousemove,where to choose emails,?,571:155
+11.95,click,Mark Egi Bandolin,P1,?
+13.76,mousemove,other,?,654:282
+13.77,mousemove,where to read the email,?,667:293
+19.09,mousemove,where to choose emails,?,650:290
+19.19,mousemove,other,?,548:126
+21.73,click,Report Phish button,?,
+22.19,mousemove,where to choose emails,?,539:137
+22.59,click,Scans,P2,?
+33.07,mousemove,other,?,516:134
+33.88,click,Report Phish button,?,
+34.36,mousemove,where to choose emails,?,525:141
+34.73,click,Google,L1,?
+49.7,click,Melita Ltd,P3,?
+71.33,mousemove,where to read the email,?,660:184
+71.59,mousemove,other,?,723:87
+72.15,click,Report Phish button,?,
+72.39,mousemove,where to choose emails,?,603:150
+72.98,click,Microsoft OneDrive,L2,?
+77.41,mousemove,where to read the email,?,680:339
+107.34,mousemove,where to choose emails,?,640:441
+108.35,click,Apple,P4,?
+115.08,mousemove,where to read the email,?,661:379
+154.48,mousemove,where to choose emails,?,647:292
+154.74,mousemove,sidebar,?,278:231
+154.81,mousemove,where to choose emails,?,285:286
+155.53,click,Dropbox,L3,?
+157.96,mousemove,where to read the email,?,687:457
+164.99,mousemove,where to choose emails,?,604:421
+165.21,mousemove,other,?,280:466
+165.31,mousemove,where to choose emails,?,282:499
+165.65,click,Melita,L4,?
+166.06,mousemove,other,?,653:513
+166.08,mousemove,where to read the email,?,658:510
+202.94,mousemove,where to choose emails,?,634:410
+203.8,click,JIDESH GOVINDANKUTTY NAIR,P5,?
+207.21,mousemove,where to read the email,?,660:163
+213.48,mousemove,where to choose emails,?,642:511
+214.79,mousemove,other,?,505:94
+215.61,click,Report Phish button,?,
+215.85,mousemove,where to choose emails,?,617:161
+216.53,click,Revolut,L5,?
+217.42,mousemove,where to read the email,?,678:567
+224.81,mousemove,where to choose emails,?,641:627
+225.01,mousemove,sidebar,?,276:806
+225.25,mousemove,other,?,279:695
+225.28,mousemove,where to choose emails,?,287:691
+225.76,click,Commissioner for Revenue,P6,?
+226.42,mousemove,where to read the email,?,657:561
+243.51,mousemove,where to choose emails,?,611:555
+246.19,mousemove,where to read the email,?,664:665
+256.32,mousemove,other,?,654:582
+256.33,mousemove,where to choose emails,?,652:584
+259.16,click,Karen Abela,P7,?
+270.18,mousemove,other,?,656:76
+271.04,click,Report Phish button,?,
+271.16,mousemove,where to choose emails,?,651:83
+271.89,click,Mulvaney Shannon at Agenzija Zghazagh,L7,?
+273.08,mousemove,where to read the email,?,687:379
+276.91,mousemove,other,?,785:59:00
+277.16,mousemove,where to choose emails,?,649:05:00
+277.67,click,Report Phish button,?,
+278.29,click,PayPal,L6,?
+278.64,mousemove,other,?,653:433
+278.65,mousemove,where to read the email,?,669:433
+292.76,mousemove,where to choose emails,?,621:509
+292.88,mousemove,other,?,280:616
+292.89,mousemove,sidebar,?,228:624
+293.1,mousemove,where to choose emails,?,283:533
+293.45,click,Netflix,P8,?
+293.86,mousemove,where to read the email,?,679:516
+309.44,mousemove,where to choose emails,?,611:488
+318.04,mousemove,sidebar,?,277:607
+318.34,mousemove,other,?,280:479
+318.36,mousemove,where to choose emails,?,286:484
+326.13,click,Facebook,P9,?
+339.45,click,Firebase,L8,?
+342.54,mousemove,where to read the email,?,661:633
+348.59,mousemove,where to choose emails,?,596:537
+348.65,mousemove,sidebar,?,236:645
+348.93,mousemove,other,?,279:755
+348.94,mousemove,where to choose emails,?,318:755
+349.26,click,PayPal Billing Department,P10,?
+351.05,mousemove,other,?,653:849
+351.06,mousemove,where to read the email,?,660:849
+378.88,mousemove,where to choose emails,?,571:769
+381.59,mousemove,where to read the email,?,700:591
+381.74,mousemove,other,?,848:62
+382.04,mousemove,where to choose emails,?,581:33:00
+382.28,mousemove,other,?,653:109
+382.65,click,Report Phish button,?,
+382.77,mousemove,where to read the email,?,665:95
+382.79,mousemove,other,?,653:141
+382.8,mousemove,where to choose emails,?,647:167
+383.33,click,MCAST IICT No-reply,L9,?
+393.85,click,Dropbox,L10,?
+394.86,mousemove,where to read the email,?,667:681
+400.08,mousemove,where to choose emails,?,556:467
+400.47,click,PayPal,L6,?
+400.74,mousemove,where to read the email,?,704:512
+402.68,mousemove,where to choose emails,?,646:526
+403.28,click,Netflix,P8,?
+404.08,mousemove,where to read the email,?,657:263
+404.14,mousemove,other,?,711:86
+404.24,mousemove,where to choose emails,?,628:07:00
+405.05,click,Report Phish button,?,
+407.7,click,Revolut,L5,?
+414.56,mousemove,where to read the email,?,657:93
+414.65,mousemove,other,?,1333:69
+415.82,mousemove,where to read the email,?,1276:96
+416.21,mousemove,where to choose emails,?,649:262
+418.79,mousemove,other,?,659:39:00
+418.99,mousemove,where to choose emails,?,615:24:00
