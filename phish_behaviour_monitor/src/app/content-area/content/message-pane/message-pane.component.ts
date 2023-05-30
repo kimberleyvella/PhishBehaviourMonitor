@@ -104,7 +104,6 @@ export class MessagePaneComponent implements OnInit {
         }
 
         let sender = args.data as { [key: string]: string };
-        //let sender = args.item.querySelector('.sender-style').textContent;
         let timeOnLastDiv = this.prevEvent ? (Date.now() - this.prevEvent) / 1000 : 0;
         this.prevEvent = Date.now();
         let line = "Timing: " + Math.round(this.prevEvent / 1000) + " Change of email";

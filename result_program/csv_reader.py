@@ -60,7 +60,6 @@ while i < len(rows):
             'CountMoves': email_event_count
         })
 
-        # Remove all lines marked 'consumed' from the list
         rows = [r for r in rows if r not in [email_start, email_stop]]
 
         # Start over from the beginning of the list

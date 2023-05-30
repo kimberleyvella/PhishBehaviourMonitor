@@ -133,7 +133,6 @@ export class ReadingPaneComponent implements AfterViewInit {
             'url(' + this.selectedMessage[key].toString().replace('assets/images/images/', 'assets/images/large/') + ')  no-repeat 50% 50%';
         key = 'text';
         document.getElementById('rp-sub').innerHTML = `<p>${this.selectedMessage[key]}</p>&nbsp;<p>&lt;${this.selectedMessage['Email']}&gt;</p>`
-        // document.getElementById('rp-sub').innerHTML = this.selectedMessage[key].toString();
         key = 'Date'
         let dateString: string = this.selectedMessage[key].toString();
         key = 'Time';
